@@ -1,3 +1,91 @@
-$test: 20px;
-$testTwo: 50px;
-$testThree: 200px;
+/*--- FONTS ---*/
+
+//Helvetica Neue Black
+@font-face {
+    font-family: 'helvetica_neueblack';
+    src: url('../fonts/helvetica-neue-black/helvenbc-webfont.eot');
+    src: url('../fonts/helvetica-neue-black/helvenbc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-neue-black/helvenbc-webfont.woff2') format('woff2'),
+         url('../fonts/helvetica-neue-black/helvenbc-webfont.woff') format('woff'),
+         url('../fonts/helvetica-neue-black/helvenbc-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-neue-black/helvenbc-webfont.svg#helvetica_neueblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Helvetica Neue Regular
+@font-face {
+    font-family: 'helvetica_neueregular';
+    src: url('../fonts/helvetic-neue-regular/helvetnr-webfont.eot');
+    src: url('../fonts/helvetic-neue-regular/helvetnr-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetic-neue-regular/helvetnr-webfont.woff2') format('woff2'),
+         url('../fonts/helvetic-neue-regular/helvetnr-webfont.woff') format('woff'),
+         url('../fonts/helvetic-neue-regular/helvetnr-webfont.ttf') format('truetype'),
+         url('../fonts/helvetic-neue-regular/helvetnr-webfont.svg#helvetica_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+//Helvetica Neue Roman
+@font-face {
+    font-family: 'helvetica_neueroman';
+    src: url('../fonts/helvetic-neue-roman/helvetnc-webfont.eot');
+    src: url('../fonts/helvetic-neue-roman/helvetnc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetic-neue-roman/helvetnc-webfont.woff2') format('woff2'),
+         url('../fonts/helvetic-neue-roman/helvetnc-webfont.woff') format('woff'),
+         url('../fonts/helvetic-neue-roman/helvetnc-webfont.ttf') format('truetype'),
+         url('../fonts/helvetic-neue-roman/helvetnc-webfont.svg#helvetica_neueroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$helvetica-B:		'helvetica_neueblack';
+$helvetica-C:		'helvetica_neueregular';
+$helvetica-R:		'helvetica_neueroman';
+
+/*--- COLORS ---*/
+
+$primaryColor:		#1b4b73;
+$secondaryColor:	#fac090;
+$sideColor:			#ac2743;
+
+$white:				#ffffff;
+$gray:				#666666;
+$graylighter: 		#f2f2f2;
+
+$red: 				#ac2743;
+
+/*--- FONT SIZES ---*/
+
+$titleSite:			67px;
+$subtitleSite:		47px;
+
+$titleSite-tab:		47px;
+$subtitleSite-tab:	27px;
+
+$titleSite-mob:		30px;
+$subtitleSite-mob:	25px;
+
+$nav:				30px;
+$secondaryNav: 		23px;
+
+$nav-mob: 			15px;
+
+$title:				40px;
+$subtitle:			10px;
+
+$title-mob:			25px;
+
+$titleFooter: 		33px;
+$subtitleFooter: 	24px;
+
+$subtitleFooter-mob: 18px;
+
+$readMore: 			24px;
+
+$text:				16px;
+
+$appointment: 		34px;
+
+/*--- PADDING ---*/
+$mainPadding:		15px 30px 15px 30px;
