@@ -1,0 +1,329 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*--- FONTS ---*/
+@font-face {
+  font-family: 'helvetica_neueblack';
+  src: url("../fonts/helvetica-neue-black/helvenbc-webfont.eot");
+  src: url("../fonts/helvetica-neue-black/helvenbc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetica-neue-black/helvenbc-webfont.woff2") format("woff2"), url("../fonts/helvetica-neue-black/helvenbc-webfont.woff") format("woff"), url("../fonts/helvetica-neue-black/helvenbc-webfont.ttf") format("truetype"), url("../fonts/helvetica-neue-black/helvenbc-webfont.svg#helvetica_neueblack") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'helvetica_neueregular';
+  src: url("../fonts/helvetic-neue-regular/helvetnr-webfont.eot");
+  src: url("../fonts/helvetic-neue-regular/helvetnr-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetic-neue-regular/helvetnr-webfont.woff2") format("woff2"), url("../fonts/helvetic-neue-regular/helvetnr-webfont.woff") format("woff"), url("../fonts/helvetic-neue-regular/helvetnr-webfont.ttf") format("truetype"), url("../fonts/helvetic-neue-regular/helvetnr-webfont.svg#helvetica_neueregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'helvetica_neueroman';
+  src: url("../fonts/helvetic-neue-roman/helvetnc-webfont.eot");
+  src: url("../fonts/helvetic-neue-roman/helvetnc-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/helvetic-neue-roman/helvetnc-webfont.woff2") format("woff2"), url("../fonts/helvetic-neue-roman/helvetnc-webfont.woff") format("woff"), url("../fonts/helvetic-neue-roman/helvetnc-webfont.ttf") format("truetype"), url("../fonts/helvetic-neue-roman/helvetnc-webfont.svg#helvetica_neueroman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/*--- COLORS ---*/
+/*--- FONT SIZES ---*/
+/*--- PADDING ---*/
+body,
+html {
+  padding: 0;
+  margin: 0; }
+
+.appointment p a {
+  writing-mode: tb-rl;
+  font-family: "helvetica_neueblack";
+  font-size: 30px;
+  background-color: #ac2743;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px 15px 20px 15px;
+  position: absolute;
+  right: 30px;
+  top: 1100px;
+  min-height: 310px;
+  z-index: 1;
+  text-decoration: none; }
+
+/*--- BEGIN HEADER ---*/
+header {
+  background-image: url("../img/header-background-eline-delasorte.jpg");
+  background-size: cover;
+  height: 100vh;
+  border-bottom: 10px solid #fac090;
+  margin: 0; }
+  header h1,
+  header h2 {
+    color: #ffffff;
+    padding: 15px 30px 15px 30px;
+    text-transform: uppercase;
+    width: 100%;
+    position: relative; }
+  header h1 {
+    font-family: "helvetica_neueblack";
+    font-size: 67px;
+    background-color: #1b4b73;
+    max-width: 548px;
+    /*488px of text + 30px padding-left + 30px padding-right*/
+    top: 200px; }
+  header h2 {
+    font-family: "helvetica_neueroman";
+    font-size: 47px;
+    background-color: #fac090;
+    max-width: 248px;
+    /*188px of text + 30px padding-left + 30px padding-right*/
+    top: 225px; }
+  header nav.navbar-ed {
+    position: relative;
+    top: 450px; }
+  header nav.navbar-default-ed {
+    background-color: transparent;
+    border: none; }
+    header nav.navbar-default-ed .navbar-collapse-ed {
+      border-color: transparent; }
+    header nav.navbar-default-ed .navbar-toggle-ed {
+      float: none;
+      border-radius: 0px;
+      border: 3px solid #ffffff; }
+      header nav.navbar-default-ed .navbar-toggle-ed:hover, header nav.navbar-default-ed .navbar-toggle-ed:focus {
+        background-color: #1b4b73;
+        border-color: #1b4b73; }
+      header nav.navbar-default-ed .navbar-toggle-ed span.icon-bar-ed {
+        background-color: #ffffff; }
+    header nav.navbar-default-ed .navbar-nav-ed > li > a {
+      font-family: "helvetica_neueblack";
+      font-size: 28px;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: solid 3px;
+      margin: 0 20px 20px 0;
+      padding: 8px 35px 8px 35px;
+      line-height: 30px; }
+      header nav.navbar-default-ed .navbar-nav-ed > li > a:hover, header nav.navbar-default-ed .navbar-nav-ed > li > a:focus {
+        color: #fac090; }
+
+/*--- END HEADER ---*/
+/*--- BEGIN CONTENT ---*/
+.box-ed {
+  padding: 110px 0 110px 0; }
+  .box-ed h3.h3-ed {
+    font-family: "helvetica_neueblack";
+    font-size: 36px;
+    text-transform: uppercase;
+    padding: 0 0 30px 0; }
+    .box-ed h3.h3-ed span {
+      color: #fac090; }
+  .box-ed h3.h3-blue-ed {
+    color: #1b4b73; }
+  .box-ed h3.h3-gray-ed {
+    color: #666666;
+    padding: 30px 0 20px 0; }
+  .box-ed h3.h3-white-ed {
+    color: #ffffff; }
+  .box-ed p {
+    font-family: "helvetica_neueregular";
+    font-size: 14px;
+    color: #666666;
+    line-height: 20px; }
+  .box-ed .box-gray-ed {
+    background-color: #f2f2f2;
+    padding: 22px;
+    margin: 30px 0 0 0; }
+  .box-ed .box-right-ed {
+    margin: 30px 0 50px 0; }
+  .box-ed .box-right-ed h3 {
+    border-top: solid 1px #666666;
+    padding: 40px 0 20px 0; }
+  .box-ed .box-right-last-ed {
+    border-bottom: solid 1px #666666;
+    padding-bottom: 40px;
+    margin: 0; }
+  .box-ed.box-team-ed {
+    padding: 0 0 40px 0; }
+  .box-ed button {
+    font-family: "helvetica_neueroman";
+    font-size: 20px;
+    background-color: #1b4b73;
+    color: #ffffff;
+    border: 0px;
+    padding: 10px 20px 10px 20px;
+    margin-top: 25px; }
+    .box-ed button.close {
+      color: #1b4b73;
+      background-color: transparent;
+      opacity: 1; }
+  .box-ed .modal-header-ed {
+    border-bottom: 0px; }
+  .box-ed .modal-footer-ed {
+    border-top: 0px; }
+  .box-ed.box-blue-ed {
+    background-color: #1b4b73;
+    color: #ffffff; }
+    .box-ed.box-blue-ed .secondary-nav-ed p {
+      font-family: "helvetica_neueroman";
+      font-size: 23px;
+      text-transform: uppercase;
+      border: 1px solid #fac090;
+      padding: 10px 20px 10px 20px;
+      margin: 0 25px 30px 0;
+      display: inline-block; }
+      .box-ed.box-blue-ed .secondary-nav-ed p a {
+        color: #fac090; }
+        .box-ed.box-blue-ed .secondary-nav-ed p a:hover, .box-ed.box-blue-ed .secondary-nav-ed p a:focus {
+          text-decoration: none;
+          color: #ffffff; }
+      .box-ed.box-blue-ed .secondary-nav-ed p.secondary-nav-white-ed {
+        border-color: #ffffff; }
+    .box-ed.box-blue-ed .no-padding-ed {
+      padding: 0px; }
+    .box-ed.box-blue-ed p {
+      color: #ffffff;
+      padding-bottom: 50px; }
+      .box-ed.box-blue-ed p.more-less {
+        padding-top: 10px; }
+        .box-ed.box-blue-ed p.more-less a {
+          color: #fac090;
+          text-decoration: underline;
+          cursor: pointer; }
+          .box-ed.box-blue-ed p.more-less a:before {
+            content: 'Lees minder'; }
+          .box-ed.box-blue-ed p.more-less a.collapsed:before {
+            content: 'Lees meer'; }
+  .box-ed .team-ed .team-image-ed {
+    background-image: url("../img/meester-eline-delasorte.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+    min-height: 667px; }
+  .box-ed .team-ed .team-information-ed {
+    background-color: #f2f2f2;
+    min-height: 667px;
+    padding-top: 65px; }
+    .box-ed .team-ed .team-information-ed.no-padding-ed {
+      padding-left: 0px;
+      padding-right: 0px; }
+    .box-ed .team-ed .team-information-ed p {
+      padding-bottom: 30px; }
+  .box-ed .no-margin-ed {
+    margin-left: 0px;
+    margin-right: 0px; }
+
+/*--- END CONTENT ---*/
+/*--- BEGIN FOOTER ---*/
+footer {
+  padding-bottom: 45px; }
+  footer a {
+    text-decoration: none;
+    font-size: 24px; }
+    footer a:hover {
+      text-transform: none;
+      text-decoration: none; }
+  footer p {
+    font-family: "helvetica_neueblack";
+    font-size: 24px;
+    background-color: #1b4b73;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px 10px 20px;
+    margin-top: 25px;
+    text-transform: uppercase; }
+  footer .h3-gray-ed {
+    font-family: "helvetica_neueblack";
+    font-size: 33px;
+    text-transform: uppercase;
+    padding: 0 0 30px 0;
+    color: #666666;
+    padding: 30px 0 20px 0; }
+
+/*--- END FOOTER ---*/
+/*--- BEGIN MEDIA QUERIES ---*/
+@media screen and (max-width: 1339px) {
+  .box-ed .team-ed .team-image-ed {
+    background-position: -150px; } }
+
+@media screen and (max-width: 1299px) {
+  .appointment {
+    display: none; } }
+
+@media screen and (max-width: 991px) {
+  .box-ed .team-ed .team-information-ed {
+    min-height: 334px; }
+  .box-ed .team-ed .team-image-ed {
+    background-position: 0px; } }
+
+@media screen and (max-width: 767px) {
+  header h1 {
+    top: 60px; }
+  header h2 {
+    top: 90px; }
+  header nav.navbar-ed {
+    top: 100px; }
+  header nav.navbar-default-ed .navbar-nav-ed > li > a {
+    font-size: 15px;
+    padding: 0 0 0 10px; }
+  .box-ed .team-ed .team-image-ed {
+    background-position: -200px; } }
+
+@media screen and (max-width: 669px) {
+  header h1 {
+    font-size: 47px;
+    max-width: 402px;
+    /*342 of text + 30px padding-left + 30px padding-right*/ }
+  header h2 {
+    font-size: 27px;
+    max-width: 168px;
+    /*108px of text + 30px padding-left + 30px padding-right*/ } }
+
+@media screen and (max-width: 499px) {
+  header h1 {
+    font-size: 30px;
+    max-width: 279px;
+    /*233px of text + 30px padding-left + 30px padding-right + 10px left*/ }
+  header h2 {
+    font-size: 25px;
+    max-width: 170px;
+    /*100px of text + 30px padding-left + 30px padding-right + 10px left*/ }
+  .box-ed .team-ed .team-image-ed {
+    background-position: -300px; } }
+
+@media screen and (max-width: 399px) {
+  .box-white-ed h3.h3-gray-ed {
+    font-size: 25px; }
+  footer p {
+    font-size: 18px; } }
+
+/*--- END MEDIA QUERIES ---*/

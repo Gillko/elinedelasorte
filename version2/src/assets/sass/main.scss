@@ -1,0 +1,403 @@
+@import "reset";
+@import "imports/variables";
+
+body,
+html{
+	padding: 									0;
+	margin: 									0;
+}
+
+.appointment{
+	p{
+		a{
+			writing-mode: 						tb-rl;
+			font-family: 						$helvetica-B;
+			font-size: 							$appointment;
+			background-color: 					$red;
+			color: 								$white;
+			text-transform: 					uppercase;
+			padding: 							20px 15px 20px 15px;
+			position: 							absolute;
+			right: 								30px;
+			top: 								1100px;
+			min-height: 						310px;
+			z-index: 							1;
+			text-decoration: 					none;
+		}
+	}
+}
+
+/*--- BEGIN HEADER ---*/
+header{
+	background-image: 						url('../img/header-background-eline-delasorte.jpg');
+	background-size: 						cover;
+	height: 								100vh;
+	border-bottom: 							10px solid $secondaryColor;
+	margin: 								0;
+
+	h1,
+	h2{
+		color: 								$white;
+		padding: 							$mainPadding;
+		text-transform: 					uppercase;
+		width: 								100%;
+		position: 							relative;
+	}
+
+	h1{
+		font-family: 						$helvetica-B;
+		font-size: 							$titleSite;
+		background-color: 					$primaryColor;
+		max-width: 							548px; /*488px of text + 30px padding-left + 30px padding-right*/
+		top: 								200px;
+	}
+
+	h2{
+		font-family: 						$helvetica-R;
+		font-size: 							$subtitleSite;
+		background-color: 					$secondaryColor;
+		max-width: 							248px; /*188px of text + 30px padding-left + 30px padding-right*/
+		top: 								225px;
+	}
+	
+	nav{
+		&.navbar-ed{
+			position: 						relative;
+			top: 							450px;
+		}
+		&.navbar-default-ed{
+			background-color: 				transparent;
+			border: 						none;
+			.navbar-collapse-ed{
+				border-color: 				transparent;
+			}
+			.navbar-toggle-ed{
+				float: 						none;
+				border-radius: 				0px;
+				border: 					3px solid $white;
+				&:hover,
+				&:focus{
+					background-color: 		$primaryColor;
+					border-color: 			$primaryColor;		
+				}
+				span{
+					&.icon-bar-ed{
+						background-color: 	$white;
+					}
+				}
+			}
+			.navbar-nav-ed{
+				> li{
+					> a{
+						font-family: 		$helvetica-B;
+						font-size: 			$nav;
+						color: 				$white;
+						text-transform: 	uppercase;
+						border: 			solid 3px;
+						margin: 			0 20px 20px 0;
+						padding: 			8px 35px 8px 35px;
+						line-height: 		30px;
+						&:hover,
+						&:focus{
+							color: 			$secondaryColor;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*--- END HEADER ---*/
+
+/*--- BEGIN CONTENT ---*/
+.box-ed{
+	padding: 									110px 0 110px 0;
+	h3{
+		&.h3-ed{
+			font-family: 						$helvetica-B;
+			font-size: 							$title;
+			text-transform: 					uppercase;
+			padding: 							0 0 30px 0;
+			span{
+				color: 							$secondaryColor;
+			}
+		}
+		&.h3-blue-ed{
+			color: 								$primaryColor;
+		}
+		&.h3-gray-ed{
+			color: 								$gray;
+			padding: 							30px 0 20px 0;
+		}
+		&.h3-white-ed{
+			color: 								$white;
+		}
+	}
+	p{
+		font-family: 							$helvetica-C;
+		font-size: 								$text;
+		color: 									$gray;
+		line-height: 							20px;
+	}
+	.box-gray-ed{
+		background-color: 						$graylighter;
+		padding: 								22px;
+		margin: 								30px 0 0 0;
+	}
+	.box-right-ed{
+		margin: 								30px 0 50px 0;
+	}
+	.box-right-ed{
+		h3{
+			border-top: 						solid 1px $gray;
+			padding: 							40px 0 20px 0;
+		}
+	}
+	.box-right-last-ed{
+		border-bottom: 							solid 1px $gray;
+		padding-bottom: 						40px;
+		margin: 								0;
+	}
+	&.box-team-ed{
+		padding: 								0 0 40px 0;
+	}
+	button{
+		font-family: 							$helvetica-R;
+		font-size: 								$readMore;
+		background-color: 						$primaryColor;
+		color: 									$white;
+		border: 								0px;
+		padding: 								10px 20px 10px 20px;
+		margin-top: 							25px;
+		&.close{
+			color: 								$primaryColor;
+			background-color: 					transparent;
+			opacity: 							1;
+		}
+	}
+	.modal-header-ed{
+		border-bottom: 							0px;
+	}
+	.modal-footer-ed{
+		border-top: 							0px;
+	}
+	&.box-blue-ed{
+		background-color: 						$primaryColor;
+		color: 									$white;
+		.secondary-nav-ed{
+			p{
+				font-family: 					$helvetica-R;
+				font-size: 						$secondaryNav;
+				text-transform: 				uppercase;
+				border: 						1px solid $secondaryColor;
+				padding: 						10px 20px 10px 20px;
+				margin: 						0 25px 30px 0;
+				display: 						inline-block;
+				a{
+					color: 						$secondaryColor;
+					&:hover,
+					&:focus{
+						text-decoration: 		none;
+						color: 					$white;
+					}
+				}
+				&.secondary-nav-white-ed{
+					border-color: 				$white;
+				}
+			}
+		}
+		.no-padding-ed{
+			padding: 							0px;
+		}
+		p{
+			color: 								$white;
+			padding-bottom: 					50px;
+			&.more-less{
+				padding-top: 					10px;
+				a{
+					color: 						$secondaryColor;
+					text-decoration: 			underline;
+					cursor: 					pointer;
+					&:before{
+						content: 				'Lees minder';
+					}
+					&.collapsed{
+						&:before{
+							content: 			'Lees meer';
+						}
+					}
+				}
+			}
+		}
+		
+	}
+	.team-ed{
+		.team-image-ed{
+			background-image: 					url('../img/meester-eline-delasorte.jpg');
+			background-position: 				cover;
+			background-repeat: 					no-repeat;
+			min-height: 						667px;
+		}
+		.team-information-ed{
+			background-color: 					$graylighter;
+			min-height: 						667px;
+			padding-top: 						65px;
+			&.no-padding-ed{
+				padding-left: 					0px;
+				padding-right: 					0px;
+			}
+			p{
+				padding-bottom: 				30px;
+			}
+		}
+	}
+	.no-margin-ed{
+		margin-left: 							0px;
+		margin-right: 							0px;
+	}
+}
+/*--- END CONTENT ---*/
+
+/*--- BEGIN FOOTER ---*/
+footer{
+	padding-bottom: 							45px;
+	a{
+		text-decoration: 						none;
+		font-size: 								$subtitleFooter;
+		&:hover{
+			text-transform: 					none;
+			text-decoration: 					none;
+		}
+	}
+	p{
+		font-family: 							$helvetica-B;
+		font-size: 								$subtitleFooter;
+	    background-color: 						#1b4b73;
+	    color: 									#fff;
+	    border: 								0;
+	    padding: 								10px 20px 10px 20px;
+	    margin-top: 							25px;
+	    text-transform: 						uppercase;
+	}
+	.h3-gray-ed{
+		font-family: 							$helvetica-B;
+		font-size: 								$titleFooter;
+		text-transform: 						uppercase;
+		padding: 								0 0 30px 0;
+		color: 									$gray;
+		padding: 								30px 0 20px 0;
+	}
+}
+/*--- END FOOTER ---*/
+
+/*--- BEGIN MEDIA QUERIES ---*/
+@media screen and (max-width: 1339px) {
+	.box-ed{
+		.team-ed{
+			.team-image-ed{
+				background-position: 			-150px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1299px) {
+	.appointment{
+		display: 								none;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.box-ed{
+		.team-ed{
+			.team-information-ed{
+				min-height: 					334px;
+			}
+			.team-image-ed{
+				background-position: 			0px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 767px) {
+	header{
+		h1{
+			top: 								60px;
+		}
+		h2{
+			top: 								90px;
+		}
+		nav{
+			&.navbar-ed{
+				top: 							100px;
+			}
+			&.navbar-default-ed{
+				.navbar-nav-ed{
+					> li{
+						> a{
+							font-size: 			$nav-mob;
+							padding:			0 0 0 10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.box-ed{
+		.team-ed{
+			.team-image-ed{
+				background-position: 			-200px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 669px) {
+	header{
+		h1{
+			font-size: 						$titleSite-tab;
+			max-width: 						402px; /*342 of text + 30px padding-left + 30px padding-right*/
+		}
+		h2{
+			font-size: 						$subtitleSite-tab;
+			max-width: 						168px; /*108px of text + 30px padding-left + 30px padding-right*/
+		}
+	}
+}
+
+@media screen and (max-width: 499px) {
+	header{
+		h1{
+			font-size: 						$titleSite-mob;
+			max-width: 						279px; /*233px of text + 30px padding-left + 30px padding-right + 10px left*/
+		}
+		h2{
+			font-size: 						$subtitleSite-mob;
+			max-width: 						170px; /*100px of text + 30px padding-left + 30px padding-right + 10px left*/
+		}
+	}
+	.box-ed{
+		.team-ed{
+			.team-image-ed{
+				background-position: 			-300px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 399px) {
+	.box-white-ed{
+		h3{
+			&.h3-gray-ed{
+				font-size: 					$title-mob;
+			}
+		}
+	}
+	footer{
+		p{
+			font-size: 						$subtitleFooter-mob;
+		}
+	}
+}
+/*--- END MEDIA QUERIES ---*/
