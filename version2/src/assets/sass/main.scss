@@ -7,99 +7,88 @@ html{
 	margin: 									0;
 }
 
-.appointment{
-	p{
-		a{
-			writing-mode: 						tb-rl;
-			font-family: 						$helvetica-B;
-			font-size: 							$appointment;
-			background-color: 					$red;
-			color: 								$white;
-			text-transform: 					uppercase;
-			padding: 							20px 15px 20px 15px;
-			position: 							absolute;
-			right: 								30px;
-			top: 								1100px;
-			min-height: 						310px;
-			z-index: 							1;
-			text-decoration: 					none;
-		}
-	}
+.secondary-color-ed{
+	color: 										$secondaryColor;
 }
-
+.white-color-ed{
+	color: 										$white;
+}
+.container-fluid-ed{
+	margin-left: 								20%;
+	margin-right: 								20%;
+}
 /*--- BEGIN HEADER ---*/
 header{
-	background-image: 						url('../img/header-background-eline-delasorte.jpg');
-	background-size: 						cover;
-	height: 								100vh;
-	border-bottom: 							10px solid $secondaryColor;
-	margin: 								0;
+	background-image: 							url('../img/header-background-eline-delasorte.jpg');
+	background-size: 							cover;
+	height: 									100vh;
+	border-bottom: 								10px solid $secondaryColor;
+	margin: 									0;
 
 	h1,
 	h2{
-		color: 								$white;
-		padding: 							$mainPadding;
-		text-transform: 					uppercase;
-		width: 								100%;
-		position: 							relative;
+		color: 									$white;
+		padding: 								15px 30px 15px 30px;
+		text-transform: 						uppercase;
+		width: 									100%;
+		position: 								relative;
 	}
 
 	h1{
-		font-family: 						$helvetica-B;
-		font-size: 							$titleSite;
-		background-color: 					$primaryColor;
-		max-width: 							548px; /*488px of text + 30px padding-left + 30px padding-right*/
-		top: 								200px;
+		font-family: 							$helvetica-B;
+		font-size: 								$titleSite;
+		background-color: 						$primaryColor;
+		max-width: 								548px; /*488px of text + 30px padding-left + 30px padding-right*/
+		top: 									200px;
 	}
 
 	h2{
-		font-family: 						$helvetica-R;
-		font-size: 							$subtitleSite;
-		background-color: 					$secondaryColor;
-		max-width: 							248px; /*188px of text + 30px padding-left + 30px padding-right*/
-		top: 								225px;
+		font-family: 							$helvetica-R;
+		font-size: 								$subtitleSite;
+		background-color: 						$secondaryColor;
+		max-width: 								248px; /*188px of text + 30px padding-left + 30px padding-right*/
+		top: 									225px;
 	}
-	
 	nav{
-		&.navbar-ed{
-			position: 						relative;
-			top: 							450px;
-		}
 		&.navbar-default-ed{
-			background-color: 				transparent;
-			border: 						none;
+			background-color: 					transparent;
+			border: 							none;
+			border-radius: 						0px;
 			.navbar-collapse-ed{
-				border-color: 				transparent;
+				height: 						0px;
+				border-color: 					transparent;
+				padding:						0px;
 			}
 			.navbar-toggle-ed{
-				float: 						none;
-				border-radius: 				0px;
-				border: 					3px solid $white;
+				float: 							none;
+				border-radius: 					0px;
+				border: 						3px solid $white;
 				&:hover,
 				&:focus{
-					background-color: 		$primaryColor;
-					border-color: 			$primaryColor;		
+					background-color: 			$primaryColor;
+					border-color: 				$primaryColor;		
 				}
 				span{
 					&.icon-bar-ed{
-						background-color: 	$white;
+						background-color: 		$white;
 					}
 				}
 			}
 			.navbar-nav-ed{
 				> li{
 					> a{
-						font-family: 		$helvetica-B;
-						font-size: 			$nav;
-						color: 				$white;
-						text-transform: 	uppercase;
-						border: 			solid 3px;
-						margin: 			0 20px 20px 0;
-						padding: 			8px 35px 8px 35px;
-						line-height: 		30px;
+						font-family: 			$helvetica-B;
+						font-size: 				$nav;
+						color: 					$white;
+						text-transform: 		uppercase;
+						line-height: 			30px;
+						padding: 				0 35px 0 0;
 						&:hover,
 						&:focus{
-							color: 			$secondaryColor;
+							color: 				$secondaryColor;
+						}
+						span{
+							padding-right: 		25px;
 						}
 					}
 				}
@@ -107,9 +96,36 @@ header{
 		}
 	}
 }
+#navbar-wrapper-ed{
+	position: 									relative;
+	top: 										400px;
+}
+.navbar-fixed-ed{
+	top: 										0;
+	z-index: 									100;
+	position: 									fixed;
+	width: 										100%;
+	background-color:							$primaryColor;
+	padding: 									35px 0 35px 0;
+	box-shadow: 								0 2px 2px -2px $secondaryColor;
+}
+#hide-show-name-ed{
+	font-family: 								$helvetica-B;
+	text-transform: 							uppercase;
+	p{
+		display: 								none;
+		font-size: 								32px;
+	}
+}
 /*--- END HEADER ---*/
 
 /*--- BEGIN CONTENT ---*/
+.paragraph-ed{
+	padding-bottom: 							20px;
+}
+.paragraph-last-ed{
+	padding-bottom: 							40px;
+}
 .box-ed{
 	padding: 									110px 0 110px 0;
 	h3{
@@ -126,12 +142,27 @@ header{
 			color: 								$primaryColor;
 		}
 		&.h3-gray-ed{
-			color: 								$gray;
+			color: 								$primaryColor;
 			padding: 							30px 0 20px 0;
 		}
 		&.h3-white-ed{
 			color: 								$white;
 		}
+	}
+	h4{
+		&.h4-ed{
+			font-family: 						$helvetica-B;
+			font-size: 							$subtitle;
+			text-transform: 					uppercase;
+			padding: 							0 0 30px 0;
+			color: 								$secondaryColor;
+		}
+	}
+	.fingerprint-ed{
+		background-image: 						url('../img/fingerprint.jpg');
+		background-repeat: 						no-repeat;
+		background-size: 						cover;
+		height: 								246px;
 	}
 	p{
 		font-family: 							$helvetica-C;
@@ -162,13 +193,14 @@ header{
 		padding: 								0 0 40px 0;
 	}
 	button{
-		font-family: 							$helvetica-R;
-		font-size: 								$readMore;
-		background-color: 						$primaryColor;
+		font-family: 							$helvetica-B;
+		font-size: 								$button;
+		background-color: 						$secondaryColor;
 		color: 									$white;
+		text-transform: 						uppercase;
 		border: 								0px;
-		padding: 								10px 20px 10px 20px;
-		margin-top: 							25px;
+		padding: 								10px 35px 10px 35px;
+		margin: 								25px 0 25px 0;
 		&.close{
 			color: 								$primaryColor;
 			background-color: 					transparent;
@@ -211,7 +243,6 @@ header{
 		}
 		p{
 			color: 								$white;
-			padding-bottom: 					50px;
 			&.more-less{
 				padding-top: 					10px;
 				a{
@@ -228,8 +259,10 @@ header{
 					}
 				}
 			}
-		}
-		
+		}	
+	}
+	&.box-no-padding-ed{
+		padding: 								0;
 	}
 	.team-ed{
 		.team-image-ed{
@@ -256,6 +289,80 @@ header{
 		margin-right: 							0px;
 	}
 }
+.quotes-ed{
+	background-image: 							url('../img/quotes-burden-of-proof-legal-law-concept.jpg');
+	background-size: 							cover;
+	background-repeat: 							no-repeat;
+	height: 									650px;
+	color: 										$white;
+	text-align: 								right;
+	.quotes-text-ed{
+		width: 									420px;
+		float: 									right;
+		position: 								relative;
+		top: 									15%;
+		right: 									10%;
+		h5{
+			&.h5-ed{
+				font-size: 						$quotes-title;
+				font-family: 					$helvetica-B;
+				text-transform: 				uppercase;
+				line-height: 					60px;
+				padding-bottom: 				20px;
+			}
+		}
+		p{
+			font-size: 							$quotes-subtitle;
+			font-family: 						$helvetica-C;
+		}
+	}
+}
+#contact{
+	border-bottom: 								10px solid $primaryColor;
+	.contact-information-wrapper-ed{
+		padding-top: 							125px;
+		.contact-information-ed{
+			max-width: 							365px;
+		}
+	}
+	.no-padding-right-ed{
+		padding-right: 							0px;
+	}
+	.no-margin-right-ed{
+		margin-right: 							0px;
+	}
+	.no-padding-left-mobile-ed{
+		padding-left: 							0px;
+	}
+	.no-padding-left-ed{
+		padding-left: 							0px;
+	}
+	.link-mailto-ed{
+		color: 									$gray;
+	}
+	#map {
+		height: 								600px;
+	}
+	.site-information-ed{
+		color: 									$secondaryColor;
+		text-decoration: 						underline;
+		font-style: 							italic;
+		cursor: 								pointer;
+	}
+	.site-information-body-ed{
+		a{
+			color: 								$secondaryColor;
+			text-decoration: 					underline;
+		}
+	}
+}
+.container-fluid-contact-ed{
+	margin-left: 								20%;
+	&.container-fluid-no-offset-right-ed{
+		margin-right: 							0%;
+		padding-right: 							0%;
+	}
+}
 /*--- END CONTENT ---*/
 
 /*--- BEGIN FOOTER ---*/
@@ -272,12 +379,12 @@ footer{
 	p{
 		font-family: 							$helvetica-B;
 		font-size: 								$subtitleFooter;
-	    background-color: 						#1b4b73;
-	    color: 									#fff;
-	    border: 								0;
-	    padding: 								10px 20px 10px 20px;
-	    margin-top: 							25px;
-	    text-transform: 						uppercase;
+		background-color: 						#1b4b73;
+		color: 									#fff;
+		border: 								0;
+		padding: 								10px 20px 10px 20px;
+		margin-top: 							25px;
+		text-transform: 						uppercase;
 	}
 	.h3-gray-ed{
 		font-family: 							$helvetica-B;
@@ -291,6 +398,13 @@ footer{
 /*--- END FOOTER ---*/
 
 /*--- BEGIN MEDIA QUERIES ---*/
+@media only screen and (max-width: 1800px){
+	.container-fluid-ed,
+	.container-fluid-contact-ed{
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+}
 @media screen and (max-width: 1339px) {
 	.box-ed{
 		.team-ed{
@@ -305,6 +419,21 @@ footer{
 	.appointment{
 		display: 								none;
 	}
+	.quotes-ed{
+		.quotes-text-ed{
+			right: 								8%;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 1105px){
+	.container-fluid-ed{
+		&.container-fluid-navigation-ed{
+			margin-left: 0%;
+			margin-right: 0%;
+		}
+	}
 }
 
 @media screen and (max-width: 991px) {
@@ -316,6 +445,75 @@ footer{
 			.team-image-ed{
 				background-position: 			0px;
 			}
+		}
+		.fingerprint-ed{
+			margin-bottom: 						20px;
+			background-position: 				50% 50%;
+		}
+	}
+	.quotes-ed{
+		.quotes-text-ed{
+			right: 								2%;
+		}
+	}
+	header{
+		nav{
+			&.navbar-default-ed{
+				.navbar-collapse-ed{
+					padding:					0px;
+				}
+				.navbar-nav-ed{
+					> li{
+						> a{
+							padding:			0 20px 0 0;
+							font-size: 			26px;
+							span{
+								display: 		none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	#hide-show-name-ed{
+		p{
+			font-size: 							20px;
+			padding: 							5px 0 0 0;
+		}
+	}
+	#map{
+		margin-top: 							30px;
+	}
+	.container-fluid-ed {
+		/* margin-left: 						0%;
+		margin-right: 							0%; */
+		&.container-fluid-no-offset-right-ed{
+			margin-right: 						0%;
+		}
+	}
+	.contact-information-wrapper-ed{
+		margin-left: 							5%;
+		margin-right: 							5%;
+	}
+	.container-fluid-contact-ed{
+		margin-left: 							0%;
+		margin-right: 							0%;
+	}
+}
+
+@media screen and (max-width: 930px) {
+	.quotes-ed{
+		background-image: 						url('../img/quotes-burden-of-proof-legal-law-concept-tablet-mobile.jpg');
+		height: 								auto;
+		padding: 								50px 0 50px 0;
+		.quotes-text-ed{
+			width: 								90%;
+			float: 								none;
+			margin: 0 auto;
+			text-align: 						center;
+			right: 								0%;
+			
 		}
 	}
 }
@@ -333,11 +531,12 @@ footer{
 				top: 							100px;
 			}
 			&.navbar-default-ed{
+				padding-top: 					25px;
 				.navbar-nav-ed{
+					margin: 					0px;
 					> li{
 						> a{
-							font-size: 			$nav-mob;
-							padding:			0 0 0 10px;
+							padding:			10px 0 10px 0;
 						}
 					}
 				}
@@ -351,7 +550,20 @@ footer{
 			}
 		}
 	}
+	#navbar-wrapper-ed{
+		top: 									0px;
+		/* padding: 								0 0 0 15px; */
+	}
+	.navbar-fixed-ed{
+		display: 								none;
+	}
 }
+
+/* @media screen and (max-width: 730px) {
+	.quotes-ed{
+		height: 								1200px;
+	}
+} */
 
 @media screen and (max-width: 669px) {
 	header{
@@ -365,6 +577,20 @@ footer{
 		}
 	}
 }
+
+/* @media screen and (max-width: 589px) {
+	.quotes-ed{
+		height: 							1400px;
+		background-position: 				-100px;
+	}
+} */
+
+/* @media screen and (max-width: 507px) {
+	.quotes-ed{
+		height: 							1600px;
+		background-position: 				-150px;
+	}
+} */
 
 @media screen and (max-width: 499px) {
 	header{
@@ -380,11 +606,31 @@ footer{
 	.box-ed{
 		.team-ed{
 			.team-image-ed{
-				background-position: 			-300px;
+				background-position: 		-300px;
+			}
+		}
+	}
+	.quotes-ed{
+		.quotes-text-ed{
+			h5{
+				&.h5-ed{
+					font-size: 				30px;
+					line-height: 			40px;
+				}
+			}
+			p{
+					font-size: 				15px;
 			}
 		}
 	}
 }
+
+/* @media screen and (max-width: 437px) {
+	.quotes-ed{
+		height: 							1800px;
+		background-position: 				-200px;
+	}
+} */
 
 @media screen and (max-width: 399px) {
 	.box-white-ed{
@@ -400,4 +646,10 @@ footer{
 		}
 	}
 }
+/* @media screen and (max-width: 382px) {
+	.quotes-ed{
+		height: 							2000px;
+		background-position: 				-250px;
+	}
+} */
 /*--- END MEDIA QUERIES ---*/

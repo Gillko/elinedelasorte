@@ -65,20 +65,15 @@ html {
   padding: 0;
   margin: 0; }
 
-.appointment p a {
-  writing-mode: tb-rl;
-  font-family: "helvetica_neueblack";
-  font-size: 30px;
-  background-color: #ac2743;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 20px 15px 20px 15px;
-  position: absolute;
-  right: 30px;
-  top: 1100px;
-  min-height: 310px;
-  z-index: 1;
-  text-decoration: none; }
+.secondary-color-ed {
+  color: #fac090; }
+
+.white-color-ed {
+  color: #ffffff; }
+
+.container-fluid-ed {
+  margin-left: 20%;
+  margin-right: 20%; }
 
 /*--- BEGIN HEADER ---*/
 header {
@@ -108,14 +103,14 @@ header {
     max-width: 248px;
     /*188px of text + 30px padding-left + 30px padding-right*/
     top: 225px; }
-  header nav.navbar-ed {
-    position: relative;
-    top: 450px; }
   header nav.navbar-default-ed {
     background-color: transparent;
-    border: none; }
+    border: none;
+    border-radius: 0px; }
     header nav.navbar-default-ed .navbar-collapse-ed {
-      border-color: transparent; }
+      height: 0px;
+      border-color: transparent;
+      padding: 0px; }
     header nav.navbar-default-ed .navbar-toggle-ed {
       float: none;
       border-radius: 0px;
@@ -130,15 +125,41 @@ header {
       font-size: 28px;
       color: #ffffff;
       text-transform: uppercase;
-      border: solid 3px;
-      margin: 0 20px 20px 0;
-      padding: 8px 35px 8px 35px;
-      line-height: 30px; }
+      line-height: 30px;
+      padding: 0 35px 0 0; }
       header nav.navbar-default-ed .navbar-nav-ed > li > a:hover, header nav.navbar-default-ed .navbar-nav-ed > li > a:focus {
         color: #fac090; }
+      header nav.navbar-default-ed .navbar-nav-ed > li > a span {
+        padding-right: 25px; }
+
+#navbar-wrapper-ed {
+  position: relative;
+  top: 400px; }
+
+.navbar-fixed-ed {
+  top: 0;
+  z-index: 100;
+  position: fixed;
+  width: 100%;
+  background-color: #1b4b73;
+  padding: 35px 0 35px 0;
+  box-shadow: 0 2px 2px -2px #fac090; }
+
+#hide-show-name-ed {
+  font-family: "helvetica_neueblack";
+  text-transform: uppercase; }
+  #hide-show-name-ed p {
+    display: none;
+    font-size: 32px; }
 
 /*--- END HEADER ---*/
 /*--- BEGIN CONTENT ---*/
+.paragraph-ed {
+  padding-bottom: 20px; }
+
+.paragraph-last-ed {
+  padding-bottom: 40px; }
+
 .box-ed {
   padding: 110px 0 110px 0; }
   .box-ed h3.h3-ed {
@@ -151,10 +172,21 @@ header {
   .box-ed h3.h3-blue-ed {
     color: #1b4b73; }
   .box-ed h3.h3-gray-ed {
-    color: #666666;
+    color: #1b4b73;
     padding: 30px 0 20px 0; }
   .box-ed h3.h3-white-ed {
     color: #ffffff; }
+  .box-ed h4.h4-ed {
+    font-family: "helvetica_neueblack";
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0 0 30px 0;
+    color: #fac090; }
+  .box-ed .fingerprint-ed {
+    background-image: url("../img/fingerprint.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 246px; }
   .box-ed p {
     font-family: "helvetica_neueregular";
     font-size: 14px;
@@ -176,13 +208,14 @@ header {
   .box-ed.box-team-ed {
     padding: 0 0 40px 0; }
   .box-ed button {
-    font-family: "helvetica_neueroman";
-    font-size: 20px;
-    background-color: #1b4b73;
+    font-family: "helvetica_neueblack";
+    font-size: 24px;
+    background-color: #fac090;
     color: #ffffff;
+    text-transform: uppercase;
     border: 0px;
-    padding: 10px 20px 10px 20px;
-    margin-top: 25px; }
+    padding: 10px 35px 10px 35px;
+    margin: 25px 0 25px 0; }
     .box-ed button.close {
       color: #1b4b73;
       background-color: transparent;
@@ -212,8 +245,7 @@ header {
     .box-ed.box-blue-ed .no-padding-ed {
       padding: 0px; }
     .box-ed.box-blue-ed p {
-      color: #ffffff;
-      padding-bottom: 50px; }
+      color: #ffffff; }
       .box-ed.box-blue-ed p.more-less {
         padding-top: 10px; }
         .box-ed.box-blue-ed p.more-less a {
@@ -224,6 +256,8 @@ header {
             content: 'Lees minder'; }
           .box-ed.box-blue-ed p.more-less a.collapsed:before {
             content: 'Lees meer'; }
+  .box-ed.box-no-padding-ed {
+    padding: 0; }
   .box-ed .team-ed .team-image-ed {
     background-image: url("../img/meester-eline-delasorte.jpg");
     background-position: cover;
@@ -241,6 +275,62 @@ header {
   .box-ed .no-margin-ed {
     margin-left: 0px;
     margin-right: 0px; }
+
+.quotes-ed {
+  background-image: url("../img/quotes-burden-of-proof-legal-law-concept.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 650px;
+  color: #ffffff;
+  text-align: right; }
+  .quotes-ed .quotes-text-ed {
+    width: 420px;
+    float: right;
+    position: relative;
+    top: 15%;
+    right: 10%; }
+    .quotes-ed .quotes-text-ed h5.h5-ed {
+      font-size: 46px;
+      font-family: "helvetica_neueblack";
+      text-transform: uppercase;
+      line-height: 60px;
+      padding-bottom: 20px; }
+    .quotes-ed .quotes-text-ed p {
+      font-size: 22px;
+      font-family: "helvetica_neueregular"; }
+
+#contact {
+  border-bottom: 10px solid #1b4b73; }
+  #contact .contact-information-wrapper-ed {
+    padding-top: 125px; }
+    #contact .contact-information-wrapper-ed .contact-information-ed {
+      max-width: 365px; }
+  #contact .no-padding-right-ed {
+    padding-right: 0px; }
+  #contact .no-margin-right-ed {
+    margin-right: 0px; }
+  #contact .no-padding-left-mobile-ed {
+    padding-left: 0px; }
+  #contact .no-padding-left-ed {
+    padding-left: 0px; }
+  #contact .link-mailto-ed {
+    color: #666666; }
+  #contact #map {
+    height: 600px; }
+  #contact .site-information-ed {
+    color: #fac090;
+    text-decoration: underline;
+    font-style: italic;
+    cursor: pointer; }
+  #contact .site-information-body-ed a {
+    color: #fac090;
+    text-decoration: underline; }
+
+.container-fluid-contact-ed {
+  margin-left: 20%; }
+  .container-fluid-contact-ed.container-fluid-no-offset-right-ed {
+    margin-right: 0%;
+    padding-right: 0%; }
 
 /*--- END CONTENT ---*/
 /*--- BEGIN FOOTER ---*/
@@ -271,19 +361,72 @@ footer {
 
 /*--- END FOOTER ---*/
 /*--- BEGIN MEDIA QUERIES ---*/
+@media only screen and (max-width: 1800px) {
+  .container-fluid-ed,
+  .container-fluid-contact-ed {
+    margin-left: 5%;
+    margin-right: 5%; } }
+
 @media screen and (max-width: 1339px) {
   .box-ed .team-ed .team-image-ed {
     background-position: -150px; } }
 
 @media screen and (max-width: 1299px) {
   .appointment {
-    display: none; } }
+    display: none; }
+  .quotes-ed .quotes-text-ed {
+    right: 8%; } }
+
+@media only screen and (max-width: 1105px) {
+  .container-fluid-ed.container-fluid-navigation-ed {
+    margin-left: 0%;
+    margin-right: 0%; } }
 
 @media screen and (max-width: 991px) {
   .box-ed .team-ed .team-information-ed {
     min-height: 334px; }
   .box-ed .team-ed .team-image-ed {
-    background-position: 0px; } }
+    background-position: 0px; }
+  .box-ed .fingerprint-ed {
+    margin-bottom: 20px;
+    background-position: 50% 50%; }
+  .quotes-ed .quotes-text-ed {
+    right: 2%; }
+  header nav.navbar-default-ed .navbar-collapse-ed {
+    padding: 0px; }
+  header nav.navbar-default-ed .navbar-nav-ed > li > a {
+    padding: 0 20px 0 0;
+    font-size: 26px; }
+    header nav.navbar-default-ed .navbar-nav-ed > li > a span {
+      display: none; }
+  #hide-show-name-ed p {
+    font-size: 20px;
+    padding: 5px 0 0 0; }
+  #map {
+    margin-top: 30px; }
+  .container-fluid-ed {
+    /* margin-left: 						0%;
+		margin-right: 							0%; */ }
+    .container-fluid-ed.container-fluid-no-offset-right-ed {
+      margin-right: 0%; }
+  .contact-information-wrapper-ed {
+    margin-left: 5%;
+    margin-right: 5%; }
+  .container-fluid-contact-ed {
+    margin-left: 0%;
+    margin-right: 0%; } }
+
+@media screen and (max-width: 930px) {
+  .quotes-ed {
+    background-image: url("../img/quotes-burden-of-proof-legal-law-concept-tablet-mobile.jpg");
+    height: auto;
+    padding: 50px 0 50px 0; }
+    .quotes-ed .quotes-text-ed {
+      width: 90%;
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      right: 0%; } }
 
 @media screen and (max-width: 767px) {
   header h1 {
@@ -292,12 +435,25 @@ footer {
     top: 90px; }
   header nav.navbar-ed {
     top: 100px; }
-  header nav.navbar-default-ed .navbar-nav-ed > li > a {
-    font-size: 15px;
-    padding: 0 0 0 10px; }
+  header nav.navbar-default-ed {
+    padding-top: 25px; }
+    header nav.navbar-default-ed .navbar-nav-ed {
+      margin: 0px; }
+      header nav.navbar-default-ed .navbar-nav-ed > li > a {
+        padding: 10px 0 10px 0; }
   .box-ed .team-ed .team-image-ed {
-    background-position: -200px; } }
+    background-position: -200px; }
+  #navbar-wrapper-ed {
+    top: 0px;
+    /* padding: 								0 0 0 15px; */ }
+  .navbar-fixed-ed {
+    display: none; } }
 
+/* @media screen and (max-width: 730px) {
+	.quotes-ed{
+		height: 								1200px;
+	}
+} */
 @media screen and (max-width: 669px) {
   header h1 {
     font-size: 47px;
@@ -308,6 +464,18 @@ footer {
     max-width: 168px;
     /*108px of text + 30px padding-left + 30px padding-right*/ } }
 
+/* @media screen and (max-width: 589px) {
+	.quotes-ed{
+		height: 							1400px;
+		background-position: 				-100px;
+	}
+} */
+/* @media screen and (max-width: 507px) {
+	.quotes-ed{
+		height: 							1600px;
+		background-position: 				-150px;
+	}
+} */
 @media screen and (max-width: 499px) {
   header h1 {
     font-size: 30px;
@@ -318,12 +486,29 @@ footer {
     max-width: 170px;
     /*100px of text + 30px padding-left + 30px padding-right + 10px left*/ }
   .box-ed .team-ed .team-image-ed {
-    background-position: -300px; } }
+    background-position: -300px; }
+  .quotes-ed .quotes-text-ed h5.h5-ed {
+    font-size: 30px;
+    line-height: 40px; }
+  .quotes-ed .quotes-text-ed p {
+    font-size: 15px; } }
 
+/* @media screen and (max-width: 437px) {
+	.quotes-ed{
+		height: 							1800px;
+		background-position: 				-200px;
+	}
+} */
 @media screen and (max-width: 399px) {
   .box-white-ed h3.h3-gray-ed {
     font-size: 25px; }
   footer p {
     font-size: 18px; } }
 
+/* @media screen and (max-width: 382px) {
+	.quotes-ed{
+		height: 							2000px;
+		background-position: 				-250px;
+	}
+} */
 /*--- END MEDIA QUERIES ---*/
